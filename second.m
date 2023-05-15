@@ -8,7 +8,7 @@ classdef second
                 moc = second.method1(par.moc_num,par.moc_size,matrix_one,matrix_two);
                 
                 for a = 1:par.iter
-                    if (rand < par.cross_rate) %判断分子是发生单个反应还是多个反应
+                    if (rand < par.cross_rate) 
                         if (rand < par.cross_rate+0.2)
                            fym1 = second.method_two(a,par.moc_num,par.moc_size,moc,matrix_one,fym1); 
                         else
